@@ -25,6 +25,12 @@
 - **Flexbox** is a mechanism used for one-dimensional layouts.
   - Will align the element's children next to eachother in the inline direction, and stretch them in the block direction by default.
 
+```
+.my-element {
+  display: flex;
+}
+```
+
 - Items will stay on the same axis and not wrap when they run out of space, but will try to squeeze onto the same line as eachother.
 
 - Flexbox converts the child elements to be **flex items**, so you can write rules on how they will behave inside of a flex container.
@@ -33,4 +39,16 @@
 
 - **Grid** is designed to control multi-axis layouts.
 
-- 
+```
+.my-element {
+  display: grid;
+}
+```
+
+- Enables you to write layour rules on any element that has **`display: grid`**
+
+- Introduces new functions such as **`repeat()`** and **`minmax()`**
+
+- The properties **`grid-row`** and **`grid-column`** instruct the first element in a grid to span to the start of the fourth column from the first, and span from the third row to the first.
+
+
